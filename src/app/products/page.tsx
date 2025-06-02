@@ -1,6 +1,4 @@
-'use client'
-
-import { useState } from "react"
+import NavBar from "@/components/NavBar"
 
 export default function Products() {
     const products = [
@@ -11,6 +9,13 @@ export default function Products() {
 
     return (
         <div>
+            <NavBar
+                links={[
+                            {label: 'Início', href: '/'},
+                            {label: 'Produtos', href: '/products'},
+                            {label: 'Sobre Nós', href: '/about'}
+                        ]}
+            />
             <h2>Lista de Produtos:</h2>
             <ul>
                 {

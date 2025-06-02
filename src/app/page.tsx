@@ -4,8 +4,11 @@ export default function Home() {
     return (
         <div className="">
             <NavBar
-                names={['Inicio', 'Contatos', 'Linkedln']}
-                hrefs={['#', '#', 'linkedin']}
+                links={[
+                    {label: 'Início', href: '/'},
+                    {label: 'Produtos', href: '/products'},
+                    {label: 'Sobre Nós', href: '/about'}
+                ]}
             />
             <Welcome/>
         </div>

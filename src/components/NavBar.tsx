@@ -1,11 +1,13 @@
 import Image from "next/image"
 
 interface NavBarContents {
-        names: string[],
-        hrefs: string[]
+        links: {
+            label: string,
+            href: string
+        }[]
     }
 
-export default function NavBar(props: NavBarContents) {
+export default function NavBar({links}: NavBarContents) {
 
     return (
         <nav className="bg-fuchsia-700 shadow-md">
@@ -22,8 +24,8 @@ export default function NavBar(props: NavBarContents) {
                             <span className="ml-3">NextApp</span>
                         </div>
                     <div className="space-x-7">
-                        {props.names.map((name, index) => (
-                            <a className="text-lg font-medium hover:text-zinc-800 hover:underline" href={props.hrefs[index]} key={index}>{name}</a>
+                        {links.map((link, index) => (
+                            <a className="text-xl font-medium hover:text-zinc-800 hover:underline" href={link.href} key={index}>{link.label}</a>
                         ))}
                     </div>
                 </div>
