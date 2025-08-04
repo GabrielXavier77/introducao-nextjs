@@ -10,7 +10,7 @@ interface NavBarContents {
 export default function NavBar({links}: NavBarContents) {
 
     return (
-        <nav className="bg-fuchsia-700 shadow-md">
+        <nav className="w-full bg-fuchsia-700 shadow-md">
             <div className="px-4">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex justify-center items-center">
