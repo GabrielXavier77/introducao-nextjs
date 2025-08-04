@@ -1,4 +1,5 @@
 import ClientCounter from "@/components/ClientCounter"
+import NavBar from "@/components/NavBar"
 
 export default function ServerExample() {
     const data = 'dados muitos dados HHAAHAHAHAHA!!!!!!!'

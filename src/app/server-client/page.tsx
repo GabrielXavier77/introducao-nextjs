@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import ThemeToggle from "@/components/ThemeToggle"
+import ThemeToggle from "../../components/ThemeToggle"
+import NavBar from "@/components/NavBar";
 
 export default function ServerClient() {
     const [dateTime, setDateTime] = useState(new Date())
