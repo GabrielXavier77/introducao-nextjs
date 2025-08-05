@@ -57,6 +57,7 @@ export default function Home() {
           { label: "Início", href: "/" },
           { label: "Produtos", href: "/products" },
           { label: "Sobre Nós", href: "/about" },
+          { label: "Comentarios", href: "/comments"}
         ]}
       />
       <div className="flex flex-wrap justify-center p-4 gap-4">
