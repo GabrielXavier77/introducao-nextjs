@@ -11,7 +11,7 @@ interface CardContent {
 
 export default function Card({image, title, subTitle}: CardContent) {
     return (
-        <div className="m-5 bg-gray-300 w-md h-45 p-5 border border-gray-400 rounded-2xl hover:shadow-md transition duration-300">
+        <div className="bg-gray-300 w-md h-45 p-5 border border-gray-400 rounded-2xl hover:shadow-md transition duration-300">
             <Image
                 src={image.src}
                 alt={image.alt}
