@@ -1,9 +1,9 @@
-import Welcome from "@/components/Welcome";
 import NavBar from "@/components/NavBar";
 import ImageCard from "@/components/ImageCard";
 import Card from "@/components/Card";
 import Counter from "@/components/Counter";
 import { ImageCardProps } from "@/components/ImageCard";
+import LikeButton from "@/components/LikeButton";
 
 export default function Home() {
   const ImageCardContents: ImageCardProps[] = [
@@ -98,7 +98,9 @@ export default function Home() {
       <div className="p-4 w-full flex justify-center">
         <Counter initial={53} />
       </div>
-      <Welcome />
+      <div className="p-4 w-full flex justify-center">
+        <LikeButton/>
+      </div>
     </div>
   );
 }
