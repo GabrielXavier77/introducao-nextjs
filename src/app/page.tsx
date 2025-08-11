@@ -5,6 +5,7 @@ import Counter from "@/components/Counter";
 import { ImageCardProps } from "@/components/ImageCard";
 import LikeButton from "@/components/LikeButton";
 import EffectCounter from "@/components/EffectCounter";
+import Lamp from "@/components/Lamp";
 
 export default function Home() {
   const ImageCardContents: ImageCardProps[] = [
@@ -99,6 +100,9 @@ export default function Home() {
       <div className="p-4 w-full flex justify-center gap-4">
         <Counter initial={53} />
         <EffectCounter/>
+      </div>
+      <div className="p-4 w-full flex justify-center">
+        <Lamp/>
       </div>
       <div className="p-4 w-full flex justify-center">
         <LikeButton/>
