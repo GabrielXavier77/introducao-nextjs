@@ -6,6 +6,16 @@ export default function Calculadora() {
   const [display, setDisplay] = useState<string>("");
 
   const addOperator = (operator: string) => {
+    const operators = ["+", "-", "*", "/"]
+
+    const disableOperators = operators.filter((op) => op !== operator)
+    console.log(disableOperators)
+
+    const hasAnotherOperator = disableOperators.some((op) => display.includes(op))
+    console.log(hasAnotherOperator)
+
+    if (hasAnotherOperator) return
+
     if (
       display.endsWith("+") ||
       display.endsWith("-") ||
@@ -36,6 +46,12 @@ export default function Calculadora() {
 
   const handleOperations = () => {
     let expression = display.match(/\d+|[+\-*/]/g) || [""];
+
+    for (let i = 0; i < expression.length; i++) {
+      if (expression[i] === "/" && expression[i + 1] === "0") {
+        return
+      }
+    }
 
     while (true) {
       while (true) {
@@ -88,9 +104,9 @@ export default function Calculadora() {
           }
         }
       }
-      setDisplay(String(expression));
       break;
     }
+    setDisplay(String(expression));
   };
 
   return (
