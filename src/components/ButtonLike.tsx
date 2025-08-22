@@ -16,7 +16,7 @@ export default function ButtonLike() {
 
   return (
     <button
-      className={`flex items-center p-4 w-[122px] shadow-md shadow-black/50 rounded-2xl hover:scale-105 
+      className={`flex items-center p-4 w-[128px] shadow-md shadow-black/50 rounded-2xl hover:scale-105 
         transition-all ease-in-out duration-150 cursor-pointer justify-evenly 
         gap-2 border-purple-600 border-2 text-xl
         ${isLiked ? "bg-white text-purple-600" : "bg-purple-600 text-white"}`}

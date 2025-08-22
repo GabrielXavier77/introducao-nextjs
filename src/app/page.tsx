@@ -6,6 +6,7 @@ import { ImageCardProps } from "@/components/ImageCard";
 import LikeButton from "@/components/LikeButton";
 import EffectCounter from "@/components/EffectCounter";
 import Lamp from "@/components/Lamp";
+import BotaoReproducao from "@/components/BotaoReproducao";
 import ButtonLike from "@/components/ButtonLike";
 
 export default function Home() {
@@ -110,6 +111,9 @@ export default function Home() {
       </div>
       <div className="p-4 w-full flex justify-center">
         <ButtonLike/>
+      </div>
+      <div className="p-4 w-full flex justify-center">
+        <BotaoReproducao/>
       </div>
     </div>
   );
