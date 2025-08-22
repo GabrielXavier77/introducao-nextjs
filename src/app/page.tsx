@@ -6,6 +6,7 @@ import { ImageCardProps } from "@/components/ImageCard";
 import LikeButton from "@/components/LikeButton";
 import EffectCounter from "@/components/EffectCounter";
 import Lamp from "@/components/Lamp";
+import ButtonLike from "@/components/ButtonLike";
 
 export default function Home() {
   const ImageCardContents: ImageCardProps[] = [
@@ -106,6 +107,9 @@ export default function Home() {
       </div>
       <div className="p-4 w-full flex justify-center">
         <LikeButton/>
+      </div>
+      <div className="p-4 w-full flex justify-center">
+        <ButtonLike/>
       </div>
     </div>
   );
